@@ -11,7 +11,7 @@
     <section id="header" style="padding-top: 0;">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid mx-4">
-              <a class="navbar-brand fs-4 fw-bold" href="#">Chiryl Malik Izzuddin</a>
+              <a class="navbar-brand fs-4 fw-bold" href="#">My Portofolio</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -22,9 +22,6 @@
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#about">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#work">Work</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#education">Education</a>
@@ -51,7 +48,7 @@
         </div>
         <div class="arrow d-flex align-items-center flex-column mt-5">
             <a class="text-decoration-none" href="#about">More Info</a>
-            <img id="arrow" class="mt-3" onclick="location.href='#about'" src="asset/img/arrow.svg" alt="Arrow Icon">
+            <img id="arrow-home" class="mt-3" onclick="location.href='#about'" src="asset/img/arrow.svg" alt="Arrow Icon">
         </div>
     </section>
     <section id="about" class="about container">
@@ -148,66 +145,25 @@
             </div>
         </div>
     </section>
-
-    <section id="work">
-        <div>
-            <h2>Experiences</h2>
-            <div>
-                <h3>Mobile Development Cohort - Bangkit Academy 2024</h3>
-                <h4>September 2024 - January 2025</h4>
-                <ul>
-                    <li>Learned Android application development using Kotlin</li>
-                    <li>Gained various soft skills, including Growth Mindset, Time and Energy Management, Critical Thinking, Problem Solving, and Project Management</li>
-                    <li>Completed multiple Android application projects</li>
-                </ul>
+    <section id="education" class="container">        
+        <div class="text-center">
+            <div class="row justify-content-center">
+              <div class="education-item col-md-5 col-lg-4" onclick="educationItemToUrl(this)" data-url="https://mercubuana.ac.id/">
+                <img src="asset/img/umb.webp" alt="University Image" class="education-img">
+                <h3 class="mt-3">Universitas <br> Mercu Buana</h3>
+                <p>Bachelor's Degree in Informatics Engineering</p>
+                <p class="fw-semibold">GPA: 3.65</p>
+              </div>
+              <div class="education-item col-md-5 col-lg-4" onclick="educationItemToUrl(this)" data-url="https://sekolah.data.kemdikbud.go.id/index.php/chome/profil/fce3512e-5977-4237-99bc-146b8a1bb17d">
+                <img src="asset/img/smk_saradan.webp" alt="SMK Saradan Image" class="education-img">
+                <h3 class="mt-3">SMK Saradan</h3>
+                <p>Software Engineering</p>
+              </div>
             </div>
-            <div>
-                <h3>Data Entry - Kantor Pelayanan Pajak Minyak dan Gas Bumi</h3>
-                <h4>September - October 2019</h4>
-                <ul>
-                    <li>Entered tax-related data into the company's database</li>
-                    <li>Organized and summarized tax documents</li>
-                </ul>
-            </div>
-        </div>
-        <div>
-            <h2>Projects</h2>
-            <div>
-                <h3>Mail Management Project</h3>
-                <h4>November 2019</h4>
-                <ul>
-                    <li>Membangun website manajemen (input/output) surat</li>
-                    <li>Menggunakan bahasa pemrograman HTML, CSS, JavaScript, dan PHP</li>
-                </ul>
-            </div>
-            <div>
-                <h3>Tent Rental Website Analysis</h3>
-                <h4>May 2024</h4>
-                <p>In this project, I explored the tent rental market to understand how existing businesses operate and how their websites serve customers. The goal was to analyze the competition, identify key features needed for a successful rental platform, and design a better digital experience.</p>
-                <p>Here's what I worked on:</p>
-                <ul>
-                    <li>Market Research: Looked into various tent rental businesses, studied their online presence, and identified gaps that could be improved</li>
-                    <li>System Design: Created essential UML diagrams like Use Case, Activity, Sequence, and Class Diagrams to map out how the system should function from both the business and user perspectives</li>
-                    <li>UI/UX Design: Designed a clean, user-friendly interface for a tent rental website, focusing on ease of use and a smooth booking experience</li>
-                </ul>
-            </div>
+          </div>
         </div>
     </section>
-    <section id="education">
-        <h2>Education</h2>
-        <div>
-            <img src="" alt="University Image">
-            <h3>Universitas Mercu Buana</h3>
-            <p>Bachelor's Degree in Informatics Engineering</p>
-            <p>GPA: 3.65</p>
-        </div>
-        <div>
-            <img src="" alt="SMK Saradan Image">
-            <h3>SMK Saradan</h3>
-            <p>Software Engineering</p>
-        </div>
-    </section>
-    <section id="contact">
+    <section id="contact" class="contact container">
         <h2>Contact</h2>
         <div>
             <img src="" alt="WhatsApp Image">

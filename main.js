@@ -19,12 +19,19 @@ function toggleCategory(categoryId) {
 
     if (arrow.hasClass("active") && header.hasClass("active")) {
         header.removeClass("active").attr("color", "black")
-        arrow.removeClass("active").attr("src", "asset/img/arrow.svg") // Kembali ke default
+        arrow.removeClass("active").attr("src", "asset/img/arrow.svg")
     } else {
         header.addClass("active").attr("color", "#979797")
-        arrow.addClass("active").attr("src", "asset/img/arrow_gray.png") // Ubah ke warna lain
+        arrow.addClass("active").attr("src", "asset/img/arrow_gray.png")
     }
 
     const item = $(content).children(".about-exp-cat-content-item")
     $(item).slideToggle()
+}
+
+function educationItemToUrl(element) {
+    var url = $(element).data("url")
+        if (url) {
+            window.open(url, "_blank")
+        }
 }

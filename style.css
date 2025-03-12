@@ -3,6 +3,13 @@
     box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.25);
 }
 
+.img-rect {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: top;
+}
+
 #header {
     background-color: white;
     position: sticky;
@@ -18,11 +25,11 @@ section {
 section::before {
     z-index: -1;
     content: '';
-    font-size: 64px;
+    font-size: 48px;
     color: #979797;
     opacity: 0.25;
     position: absolute;
-    font-weight: 700;
+    font-weight: 600;
     top: 20px;
     left: -30px;
 }
@@ -63,12 +70,18 @@ section::before {
     content: url("asset/img/arrow_gray.png");
 }
 
-#arrow {
+#arrow-home {
     animation: 1.5s upDown infinite;
 }
 
 .about::before {
     content: 'About';
+}
+
+#about > p {
+    width: 95%;
+    text-align: justify;
+    margin-bottom: 48px;
 }
 
 .about-exp-cat-header {
@@ -85,6 +98,11 @@ section::before {
 
 .about-exp-cat-header h4:hover, .about-exp-cat-header h4.active {
     color: #979797;
+}
+
+.about-exp-cat-header .arrow-icon {
+    position: relative;
+    right: 72px;
 }
 
 .about-exp-cat-content {
@@ -140,9 +158,50 @@ section::before {
     }
 }
 
-.img-rect {
-    width: 300px;
-    height: 300px;
+#education::before {
+    content: 'Education';
+}
+
+#education .row {
+    gap: 100px;
+}
+
+.education-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.education-item:hover {
+    transform: scale(1.05);
+    box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.education-item h3 {
+    margin-top: 21px;
+    margin-bottom: 21px;
+}
+
+.education-item p {
+    margin-bottom: 16px;
+    width: 60%;
+}
+
+.education-item:hover .education-img {
+    filter: grayscale(0);
+}
+
+.education-img {
+    width: 100%;
+    max-width: 300px;
+    height: 180px;
     object-fit: cover;
-    object-position: top;
+    filter: grayscale(1);
 }
