@@ -54,17 +54,98 @@
             <img id="arrow" class="mt-3" onclick="location.href='#about'" src="asset/img/arrow.svg" alt="Arrow Icon">
         </div>
     </section>
-    <section id="about">
-        <div>
-            <h2>Chiryl Malik Izzuddin</h2>
-            <p>
-                Undergraduate Informatics Engineering student with a strong passion for Web and Android Development.
-                Experienced in the Bangkit 2024 Mobile Development learning path, various projects using Kotlin, Java, JavaScript, Bootstrap, jQuery, and an internship in Data Entry.
-                Skilled in SQL database, I am eager to keep learning and developing impactful tech solutions while preparing for a career as a Web and/or Android Devleper.
-            </p>
-        </div>
-        <div>
-            <img src="" alt="Profile Picture">
+    <section id="about" class="about container">
+        <p>
+            Undergraduate Informatics Engineering student with a strong passion for Android and Web Development.
+            Experienced in the Bangkit 2024 Mobile Development learning path, various projects using Kotlin, Java, JavaScript, Bootstrap, jQuery, and an internship in Data Entry.
+            Skilled in SQL database, I am eager to keep learning and developing impactful tech solutions while preparing for a career as a Android and/or Web Developer.
+        </p>
+        <div class="about-exp">
+            <div class="about-exp-cat">
+                <div class="about-exp-cat-header" onclick="toggleCategory('internship')">
+                    <h4>Internship</h4>
+                    <img src="asset/img/arrow.svg" alt="Arrow Icon" class="arrow-icon">
+                </div>
+                <div id="internship" class="about-exp-cat-content">
+                    <div class="about-exp-cat-content-item">
+                        <div class="about-exp-cat-content-item-header">
+                            <div>
+                                <h5>Mobile Development Cohort</h5>
+                                <p>Bangkit Academy (September 2024 - January 2025)</p>
+                            </div>
+                            <button class="btn" onclick="toggleDetail(event)">More Info</button>
+                        </div>
+                        <p class="about-exp-cat-content-item-detail">Focused on Android app development with Kotlin, enhancing both technical skills and soft skills such as critical thinking, problem-solving, and project management. Successfully developed multiple Android applications, applying best practices in software development.
+                        </p>
+                    </div>
+                    <div class="about-exp-cat-content-item">
+                        <div class="about-exp-cat-content-item-header">
+                            <div>
+                                <h5>Data Entry Internship</h5>
+                                <p>Kantor Pelayanan Pajak Minyak dan Gas Bumi (September 2019 - October 2019)</p>
+                            </div>
+                            <button class="btn" onclick="toggleDetail(event)">More Info</button>
+                        </div>
+                        <p class="about-exp-cat-content-item-detail">Entered and managed tax-related data in the company’s database while organizing and summarizing tax documents to ensure accuracy and efficiency.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="about-exp-cat-header" onclick="toggleCategory('mobile')">
+                    <h4>Mobile (Android) Projects</h4>
+                    <img src="asset/img/arrow.svg" alt="Arrow Icon" class="arrow-icon">
+                </div>
+                <div id="mobile" class="about-exp-cat-content">
+                    <div class="about-exp-cat-content-item">
+                        <div class="about-exp-cat-content-item-header">
+                            <div>
+                                <h5>Android Smart Wallet App (Financify)</h5>
+                                <p>(November 2024)</p>
+                            </div>
+                            <button class="btn" onclick="toggleDetail(event)">More Info</button>
+                        </div>
+                        <p class="about-exp-cat-content-item-detail">Developed a Smart Wallet app with essential financial features, including login, top-up, transfers, bill payments, and expense tracking. Integrated APIs to enhance functionality and ensure seamless transactions. Built the application using Flutter for a smooth and responsive user experience.</p>
+                    </div>
+                    <div class="about-exp-cat-content-item">
+                        <div class="about-exp-cat-content-item-header">
+                            <div>
+                                <h5>Android Story App</h5>
+                                <p>(November 2024)</p>
+                            </div>
+                            <button class="btn" onclick="toggleDetail(event)">More Info</button>
+                        </div>
+                        <p class="about-exp-cat-content-item-detail">Developed a Story App featuring user authentication, story uploads, and a main page displaying story details. Integrated Google Maps API to showcase location-based stories, enhancing user engagement. Built the application using Kotlin for a seamless and efficient experience.</p>
+                    </div>
+                    <div class="about-exp-cat-content-item">
+                        <div class="about-exp-cat-content-item-header">
+                            <div>
+                                <h5>Android Financial Record App (Cash Book)</h5>
+                                <p>(June 2024)</p>
+                            </div>
+                            <button class="btn" onclick="toggleDetail(event)">More Info</button>
+                        </div>
+                        <p class="about-exp-cat-content-item-detail">Developed a simple Financial Record app to track income and expenses efficiently. Implemented Room Database for secure and structured data storage. Built the application using Java to ensure reliability and performance.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-exp-cat">
+                <div class="about-exp-cat-header" onclick="toggleCategory('web')">
+                    <h4>Website Projects</h4>
+                    <img src="asset/img/arrow.svg" alt="Arrow Icon" class="arrow-icon">
+                </div>
+                <div id="web" class="about-exp-cat-content">
+                    <div class="about-exp-cat-content-item">
+                        <div class="about-exp-cat-content-item-header">
+                            <div>
+                                <h5>Tent Rental Website Analysis</h5>
+                                <p>(May 2024)</p>
+                            </div>
+                            <button class="btn" onclick="toggleDetail(event)">More Info</button>
+                        </div>
+                        <p class="about-exp-cat-content-item-detail">Conducted market research on various tent rental businesses to analyze their online presence and identify areas for improvement. Designed essential UML diagrams, including Use Case, Activity, Sequence, and Class Diagrams, to outline system functionality from both business and user perspectives. Developed a user-friendly UI/UX design for a tent rental website, ensuring a seamless and intuitive booking experience.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -72,7 +153,7 @@
         <div>
             <h2>Experiences</h2>
             <div>
-                <h3>Mobile Developmenmt Cohort - Bangkit Academy 2024</h3>
+                <h3>Mobile Development Cohort - Bangkit Academy 2024</h3>
                 <h4>September 2024 - January 2025</h4>
                 <ul>
                     <li>Learned Android application development using Kotlin</li>
@@ -150,6 +231,7 @@
     </section>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="main.js"></script>
 </body>
 </html>
