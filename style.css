@@ -125,7 +125,7 @@ section::before {
 
 .about-exp-cat-content-item-header > button {
     position: relative;
-    right: 42px;
+    right: 116px;
 }
 
 .about-exp-cat-content-item-detail {
@@ -176,22 +176,26 @@ section::before {
     border-radius: 8px;
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    overflow: hidden;
+    height: 320px;
 }
 
 .education-item:hover {
     transform: scale(1.05);
     box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.15);
     cursor: pointer;
+    height: auto;
 }
 
 .education-item h3 {
     margin-top: 21px;
-    margin-bottom: 21px;
 }
 
 .education-item p {
+    margin-top: 21px;
     margin-bottom: 16px;
     width: 60%;
+    display: none;
 }
 
 .education-item:hover .education-img {
@@ -203,5 +207,20 @@ section::before {
     max-width: 300px;
     height: 180px;
     object-fit: cover;
-    filter: grayscale(1);
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    max-width: 100%;
+    white-space: nowrap;
+}
+
+.contact-item img {
+    width: 24px;
+}
+
+.contact-item p {
+    margin-bottom: 0;
 }

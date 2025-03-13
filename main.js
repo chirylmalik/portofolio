@@ -30,8 +30,18 @@ function toggleCategory(categoryId) {
 }
 
 function educationItemToUrl(element) {
-    var url = $(element).data("url")
+    const url = $(element).data("url")
         if (url) {
             window.open(url, "_blank")
         }
+}
+
+function educationItemHover(element, isHovering) {
+    const p = $(element).find("p")
+
+    if (isHovering) {
+        p.fadeIn(200)
+    } else {
+        p.fadeOut(200)
+    }
 }
