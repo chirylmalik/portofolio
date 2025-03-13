@@ -229,6 +229,15 @@ section::before {
     opacity: 0.85;
 }
 
+footer {
+    padding: 21px 48px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 @keyframes upDown {
     0% {
         transform: translateY(0);
