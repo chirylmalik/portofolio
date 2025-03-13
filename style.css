@@ -3,13 +3,6 @@
     box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.25);
 }
 
-.img-rect {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    object-position: top;
-}
-
 #header {
     background-color: white;
     position: sticky;
@@ -51,6 +44,11 @@ section::before {
 
 .home h3 {
     font-size: 24px;
+}
+
+.home img {
+    width: 100%;
+    max-width: 320px;
 }
 
 .home .arrow img{
@@ -168,7 +166,7 @@ section::before {
     height: 320px;
 }
 
-.education-item:hover {
+.education-item:hover, .education-item.active {
     transform: scale(1.05);
     box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.15);
     cursor: pointer;
@@ -179,15 +177,19 @@ section::before {
     margin-top: 21px;
 }
 
-.education-item p {
+.education-item > p {
     margin-top: 21px;
     margin-bottom: 16px;
     width: 60%;
     display: none;
 }
 
-.education-item:hover .education-img {
-    filter: grayscale(0);
+.p-more {
+    display: block;
+    font-weight: normal;
+    color: #979797;
+    margin-top: 10px;
+    transition: opacity 0.2s ease-in-out;
 }
 
 .education-img {
@@ -207,14 +209,6 @@ section::before {
     gap: 8px;
     max-width: 100%;
     white-space: nowrap;
-}
-
-.contact-item img {
-    width: 24px;
-}
-
-.contact-item p {
-    margin-bottom: 0;
 }
 
 .contact::before {
@@ -244,5 +238,21 @@ section::before {
     }
     100% {
         transform: translateY(0);
+    }
+}
+
+@media only screen and (max-width: 575.98px) {
+    section::before {
+        left: 10px;
+        top: 42px;
+        font-size: 40px;
+    }
+    
+    .about-exp-cat-header .arrow-icon {
+        right: 20px;
+    }
+
+    .about-exp-cat-header h4 {
+        width: 70%;
     }
 }

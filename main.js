@@ -29,21 +29,48 @@ function toggleCategory(categoryId) {
     $(item).slideToggle()
 }
 
-function educationItemToUrl(element) {
-    const url = $(element).data("url")
-        if (url) {
-            window.open(url, "_blank")
-        }
-}
+// function educationItemToUrl(element) {
+//     const url = $(element).data("url")
+//         if (url) {
+//             window.open(url, "_blank")
+//         }
+// }
 
 function educationItemHover(element, isHovering) {
-    const p = $(element).find("p")
+    const content = $(element)
+    const p = content.find("p").not(".p-more")
+    const moreText = content.find(".p-more")
 
-    if (isHovering) {
+    if (content.hasClass("active")){
+        return
+    } else if (isHovering) {
         p.fadeIn(200)
+        moreText.fadeOut(200)
     } else {
         p.fadeOut(200)
+        moreText.fadeIn(200)
     }
+}
+
+function educationItemClick(element) {
+    const content = $(element)
+    const p = content.find("p").not(".p-more")
+    const moreText = content.find(".p-more")
+
+    if (content.hasClass("active")) {
+        content.removeClass("active")
+        p.slideUp(200)
+        moreText.fadeIn(200)
+    } else {
+        $(".education-item").removeClass("active").find("p").slideUp(200)
+        
+        content.addClass("active")
+        p.slideDown(200)
+        moreText.fadeOut(200)
+    }
+
+    const item = $(content).children(".education-item")
+    $(item).slideToggle()
 }
 
 function onFormSubmit(e) {
