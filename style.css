@@ -146,18 +146,6 @@ section::before {
     content: url("asset/img/arrow_gray.png");
 }
 
-@keyframes upDown {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(10px);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-
 #education::before {
     content: 'Education';
 }
@@ -209,6 +197,10 @@ section::before {
     object-fit: cover;
 }
 
+.contact {
+    padding-bottom: 128px;
+}
+
 .contact-item {
     display: flex;
     align-items: center;
@@ -223,4 +215,34 @@ section::before {
 
 .contact-item p {
     margin-bottom: 0;
+}
+
+.contact::before {
+    content: 'Contact';
+}
+
+.contact-form {
+    border: 1px solid black;
+    padding: 64px 32px;
+}
+
+.form-label {
+    font-weight: 700;
+}
+
+.form-text {
+    color: #979797;
+    opacity: 0.85;
+}
+
+@keyframes upDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
