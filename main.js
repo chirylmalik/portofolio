@@ -63,7 +63,7 @@ function educationItemClick(element) {
         moreText.fadeIn(200)
     } else {
         $(".education-item").removeClass("active").find("p").slideUp(200)
-        
+        $(".p-more").fadeIn(200)
         content.addClass("active")
         p.slideDown(200)
         moreText.fadeOut(200)
